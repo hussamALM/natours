@@ -1,0 +1,25 @@
+// the main file's goal is to import all the other files in the same file
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/type";
+@import "base/utilities";
+
+@import "components/composition";
+@import "components/button";
+@import "components/feature-box";
+@import "components/card";
+@import "components/story";
+@import "components/form";
+@import "components/bg-video";
+@import "components/popup";
+
+@import "layouts/header";
+@import "layouts/grid";
+@import "layouts/footer";
+@import "layouts/navigation";
+
+@import "pages/home";

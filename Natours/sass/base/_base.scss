@@ -1,0 +1,36 @@
+// basics difintion of our entire project
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; // 1rem = 10px
+
+  // put the bigger ones and then goes to the smaller ones
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px
+  }
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px
+  }
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem =8px
+  }
+}
+/* you put everything related to font in the body  */
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
